@@ -26,7 +26,7 @@ SELECT
     -- Company dimension fields
     cd.company_id,
     cd.name AS company_name,
-    -- Skills dimension agregated fields
+    -- Skills dimension aggregated fields
     ARRAY_AGG(
         STRUCT_PACK(
             type := sd.type,
