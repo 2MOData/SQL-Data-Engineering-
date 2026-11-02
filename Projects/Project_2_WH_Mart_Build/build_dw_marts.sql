@@ -17,3 +17,6 @@
 
 -- Step 6: Mart - Update priority roles mart (incremental update)
 .read 06_update_priority_mart.sql
+
+-- Step 7: Mart - Create company hiring mart (dimensional mart with bridge tables)
+.read 07_create_company_mart.sql

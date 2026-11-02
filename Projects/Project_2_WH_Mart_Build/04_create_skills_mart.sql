@@ -76,7 +76,7 @@ WITH job_postings_prep AS (
         sjd.skill_id,
         DATE_TRUNC('month', jpf.job_posted_date) AS month_start_date,
         jpf.job_title_short,
-        -- couvert boolean flags (1 or 0)
+        -- convert boolean flags (1 or 0)
         CASE WHEN jpf.job_work_from_home = TRUE THEN 1 ELSE 0 END AS is_remote,
         CASE WHEN jpf.job_health_insurance = TRUE THEN 1 ELSE 0 END AS has_health_insurance,
         CASE WHEN jpf.job_no_degree_mention = TRUE THEN 1 ELSE 0 END AS no_degree_mentioned
